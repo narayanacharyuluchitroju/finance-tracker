@@ -34,7 +34,7 @@ A sleek and intuitive full-stack web application designed to simplify personal e
 
 ## 📸 Application Screenshots
 
-| Login Page | Register Page | Dashboard |
+| Login Page | Profile Page | Dashboard |
 |------------|---------------|-----------|
 | ![Login](./assets/Login.jpg) | ![Profile](./assets/Profile.jpg) | ![Dashboard](./assets/Dashboard.jpg) |
 
