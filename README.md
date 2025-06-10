@@ -43,7 +43,7 @@ A full-stack personal finance tracking application that allows users to manage t
 |------------|---------------|-----------|
 | ![Login](./assets/login.png) | ![Register](./assets/register.png) | ![Dashboard](./assets/dashboard.png) |
 
-> Make sure to place these images inside an `assets` folder in the root directory.
+
 
 ---
 
