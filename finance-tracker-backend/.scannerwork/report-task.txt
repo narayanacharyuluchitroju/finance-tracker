@@ -1,0 +1,6 @@
+projectKey=finance-backend
+serverUrl=http://localhost:9000
+serverVersion=25.6.0.109173
+dashboardUrl=http://localhost:9000/dashboard?id=finance-backend
+ceTaskId=500afc44-5327-4687-bf68-2016598f96ca
+ceTaskUrl=http://localhost:9000/api/ce/task?id=500afc44-5327-4687-bf68-2016598f96ca

@@ -1,0 +1,9 @@
+
+npx sonar-scanner `
+  -Dsonar.login=squ_7251348c0e3d8b597cd942f0e1c06072f6f8ccea `
+  -Dsonar.host.url=http://localhost:9000
+
+$env:SONAR_TOKEN="squ_7251348c0e3d8b597cd942f0e1c06072f6f8ccea"
+$env:SONAR_HOST_URL="http://localhost:9000"
+
+npx sonar-scanner "-Dsonar.login=$env:SONAR_TOKEN" "-Dsonar.host.url=$env:SONAR_HOST_URL"
