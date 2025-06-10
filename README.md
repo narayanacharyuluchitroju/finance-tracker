@@ -1,73 +1,131 @@
-# 💸 Finance Tracker App
+# 💸 Finance Tracker
 
-A full-stack personal finance tracking application that allows users to manage their expenses efficiently. Users can register/login, categorize their expenses, and visualize their spending. Built with **React.js** frontend and **Node.js + Express.js** backend, with MongoDB as the database. Also includes OCR-powered receipt scanning.
+A sleek and intuitive full-stack web application designed to simplify personal expense management. With a modern interface and smart features like receipt scanning and automatic detail extraction, Finance Tracker helps users stay on top of their finances effortlessly. Built using **React.js** and **Node.js with Express**, and powered by **MongoDB** for robust data handling.
 
----
 
-## 🚀 Features
+## 🚀 Key Highlights
 
-- 🔐 User Authentication (Register & Login)
-- 🧾 Add, Update, and Delete Expenses
-- 📊 Category-wise and Total Expense Tracking
-- 📷 Upload or Capture Receipts with OCR
-- ☁️ Real-time Code Analysis via SonarCloud
-- 🗃️ MongoDB for persistent storage
+- 🔐 Secure user authentication (Sign up & Log in)
+- 🧾 Add, update, and delete expenses with ease
+- 📊 Track total spending and category-wise breakdowns
+- 📷 Capture or upload receipts and auto-fill expense data using OCR
+- ☁️ Integrated with SonarCloud for continuous code quality analysis
+- 🗃️ Reliable MongoDB database integration
 
----
 
-## 🛠️ Tech Stack
+## 🛠️ Technology Stack
 
 ### Frontend
-- React.js
-- Tailwind CSS
-- Axios
-- OpenAI API (OCR + NLP for Expense Extraction)
+- **React.js** for dynamic UI
+- **Tailwind CSS** for modern styling
+- **Axios** for API communication
+- **OCR via OpenAI API** for extracting data from images
 
 ### Backend
-- Node.js
-- Express.js
-- MongoDB with Mongoose
-- JWT for Authentication
-- Multer for File Uploads
+- **Node.js** with **Express.js**
+- **MongoDB** with Mongoose ORM
+- **JWT Authentication** for session security
+- **Multer** for handling image uploads
 
-### DevOps & CI/CD
-- Docker & Docker Compose
-- GitHub Actions
-- SonarCloud Integration
+### DevOps & Tooling
+- **Docker** & **Docker Compose** for containerized development
+- **GitHub Actions** for CI/CD pipelines
+- **SonarCloud** for real-time code analysis
 
----
-
-## 📸 Screenshots
+## 📸 Application Screenshots
 
 | Login Page | Register Page | Dashboard |
 |------------|---------------|-----------|
-| ![Login](./assets/login.png) | ![Register](./assets/register.png) | ![Dashboard](./assets/dashboard.png) |
+| ![Login](./assets/Login.jpg) | ![Register](./assets/Register.jpg) | ![Dashboard](./assets/Dashboard.jpg) |
 
 
 
----
+## 🧠 Smart Receipt Scanning
 
-## 🧠 OCR Integration
+Easily scan bills or receipts using your camera or upload from your device. The backend processes the image using an AI-powered OCR engine to extract key details like:
 
-Users can upload or capture an image of a bill. The backend sends the image to OpenAI’s API, which returns structured fields:
+- 💲 **Amount**
+- 🏷️ **Category**
+- 📝 **Description**
+- 💳 **Payment Method**
+- 📅 **Date**
 
-- 💲 Amount
-- 🏷️ Category
-- 📝 Description
-- 💳 Payment Type
-- 📅 Date
+Users can review and edit this information before saving it to their dashboard.
 
-These details are auto-filled and can be manually edited before saving.
 
----
+## 🧪 Continuous Code Quality with SonarCloud
 
-## 🧪 SonarCloud Integration
+This project integrates SonarCloud for code health checks, highlighting bugs, code smells, and coverage insights with every push.
 
-SonarCloud is used for static code analysis and test coverage reporting. View the project here:
+🔍 [View SonarCloud Project Dashboard](https://sonarcloud.io/project/overview?id=narayanacharyuluchitroju_finance-tracker)
 
-🔗 [SonarCloud Project Dashboard](https://sonarcloud.io/project/overview?id=narayanacharyuluchitroju_finance-tracker)
-
----
 
 ## 🧭 Project Structure
 
+finance-tracker/
+├── finance-tracker-backend/ # Backend: Express.js + MongoDB
+│ └── routes/
+│ └── controllers/
+│ └── middleware/
+│ └── models/
+├── finance-tracker-frontend/ # Frontend: React.js + Tailwind CSS
+│ └── components/
+│ └── pages/
+│ └── assets/
+├── .github/workflows/ # GitHub Actions CI/CD pipelines
+├── docker-compose.yml # Docker orchestration
+├── .env # Environment variables
+└── README.md
+
+
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- Node.js ≥ 18.x
+- Docker & Docker Compose
+- MongoDB (or use via Docker)
+- OpenAI API key (for OCR)
+- SonarCloud token (for CI integration)
+
+
+
+## 📁 Environment Setup
+
+Create a `.env` file in both frontend and backend folders:
+
+### `.env` for Backend
+
+PORT=5000
+MONGO_URI=mongodb://mongo:27017/finance-tracker
+JWT_SECRET=your_jwt_secret
+OPENAI_API_KEY=your_openai_api_key
+.env for Frontend
+env
+Copy
+Edit
+REACT_APP_BACKEND_URL=http://localhost:5000
+
+## 🐳 Run with Docker Compose
+
+docker-compose up --build
+It will:
+
+Start MongoDB, backend, and frontend services
+
+Backend will run on http://localhost:5000
+
+Frontend will run on http://localhost:3000
+
+🧪 Run Tests
+Inside the finance-tracker-frontend directory:
+
+npm test -- --coverage
+Test coverage is automatically picked up and pushed to SonarCloud via GitHub Actions on each push to main.
+
+🤝 Contributing
+Contributions are welcome! Feel free to fork this repo, raise issues, or open pull requests for improvements.
+
+📄 License
+This project is licensed under the MIT License.
