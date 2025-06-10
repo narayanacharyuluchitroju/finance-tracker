@@ -36,7 +36,7 @@ A sleek and intuitive full-stack web application designed to simplify personal e
 
 | Login Page | Register Page | Dashboard |
 |------------|---------------|-----------|
-| ![Login](./assets/Login.jpg) | ![Register](./assets/Register.jpg) | ![Dashboard](./assets/Dashboard.jpg) |
+| ![Login](./assets/Login.jpg) | ![Profile](./assets/Profile.jpg) | ![Dashboard](./assets/Dashboard.jpg) |
 
 
 
