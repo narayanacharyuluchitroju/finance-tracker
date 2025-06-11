@@ -101,10 +101,8 @@ PORT=5000
 MONGO_URI=mongodb://mongo:27017/finance-tracker
 JWT_SECRET=your_jwt_secret
 OPENAI_API_KEY=your_openai_api_key
+
 .env for Frontend
-env
-Copy
-Edit
 REACT_APP_BACKEND_URL=http://localhost:5000
 
 ## 🐳 Run with Docker Compose
